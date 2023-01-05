@@ -9,8 +9,12 @@ function abreviation(str) {
     return str;
   }
 }
+abreviation("John Doe");
 abreviation("John");
+abreviation("John Doe Marcus");
+
 ///////////////////////////////////////////
+
 function abreviate(str) {
   let position = str.search(" ");
   if (position === -1) {
@@ -20,6 +24,9 @@ function abreviate(str) {
   let abbr = str[position + 1];
   return name + " " + abbr + ".";
 }
+abreviation("John Doe");
+abreviation("John");
+abreviation("John Doe Marcus");
 
 // Assignment 2
 
@@ -32,7 +39,9 @@ function hideEmail(str) {
   newStr += parts[0].slice(0, half) + star + "@" + parts[1];
   return newStr;
 }
-console.log(hideEmail("anaradu@yahoo.com"));
+console.log(hideEmail("nurettin@clarusway.com"));
+console.log(hideEmail("barry@clarusway.com"));
+
 /////////////////////////////////////////////////////////////////////
 function hideEmail(email) {
   let position = email.search("@");
